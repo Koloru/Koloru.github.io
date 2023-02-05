@@ -5,5 +5,5 @@ import vitePluginFaviconsInject from "vite-plugin-favicons-inject";
 // https://vitejs.dev/config/
 export default defineConfig({
 	plugins: [react(), vitePluginFaviconsInject("./src/assets/favicon.jpeg")],
-	base: "/",
+	base: "https://github.com/Koloru/Koloru.github.io",
 });
