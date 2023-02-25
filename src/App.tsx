@@ -1,14 +1,30 @@
-import { Link, Route, Router, Switch } from "wouter";
 import cx from "classnames";
 
 import "./App.css";
 
 import Construction from "./pages/Construction";
+import Navbar from "./components/Navbar";
+import Routes from "./components/Routes";
 
 function App() {
-	const construction = true;
+	const construction = false;
 	return (
-		<div className={cx("h-screen", !construction && "bg-gray-800 p-4")}></div>
+		<div className={cx("h-screen font-lato text-main relative")}>
+			{construction ? (
+				<Construction />
+			) : (
+				<div className='flex'>
+					<div className='h-screen w-2 z-50 bg-main absolute text-main'></div>
+					<div className='h-screen w-2 z-50 bg-main absolute right-0 text-main'></div>
+					<div className='w-screen h-2 bg-gray absolute text-main'></div>
+					<div className='w-screen h-2 bg-gray absolute bottom-0 text-main'></div>
+					<Navbar />
+					<div className='flex-1 flex items-center p-4'>
+						<Routes />
+					</div>
+				</div>
+			)}
+		</div>
 	);
 }
 
