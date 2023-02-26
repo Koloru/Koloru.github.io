@@ -16,13 +16,13 @@ module.exports = {
 			keyframes: {
 				pulse: {
 					"0%": { boxShadow: "0 0 0 0 #ef6eae", backgroundColor: "#ef6eae" },
-					"25%": {
+					"20%": {
 						boxShadow: "0 0 0 1em rgba(255, 255, 255, 0)",
 						backgroundColor: "#fff",
 					},
 				},
 				animation: {
-					pulse: "pulse 10s",
+					pulse: "pulse",
 				},
 			},
 		},

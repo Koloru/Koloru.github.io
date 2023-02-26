@@ -14,10 +14,10 @@ function App() {
 				<Construction />
 			) : (
 				<div className='flex'>
-					<div className='h-screen w-2 z-50 bg-main absolute text-main'></div>
-					<div className='h-screen w-2 z-50 bg-main absolute right-0 text-main'></div>
-					<div className='w-screen h-2 bg-gray absolute text-main'></div>
-					<div className='w-screen h-2 bg-gray absolute bottom-0 text-main'></div>
+					<div className='h-screen w-[15px] z-50 bg-main absolute text-main'></div>
+					<div className='h-screen w-[15px] z-50 bg-main absolute right-0 text-main'></div>
+					<div className='w-screen h-[15px] bg-gray absolute text-main'></div>
+					<div className='w-screen h-[15px] bg-gray absolute bottom-0 text-main'></div>
 					<Navbar />
 					<div className='flex-1 flex items-center p-4'>
 						<Routes />
