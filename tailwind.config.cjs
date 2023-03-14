@@ -9,6 +9,7 @@ module.exports = {
 			colors: {
 				main: "#433A3A",
 				gray: "#D9D9D9",
+				gray2: '#939090'
 			},
 			boxShadow: {
 				pulse: "0 0 0 2em rgba(255, 255, 255, 0)",
