@@ -1,40 +1,29 @@
-import "./App.css";
-import Button from "./components/Button";
+import cx from "classnames";
 
-// bg from home
-import bg from "./assets/home/bg.jpg";
-import bg2 from "./assets/home/bg2.jpg";
-import bg3 from "./assets/home/bg3.jpg";
+import "./App.css";
+
+import Construction from "./pages/Construction";
+import Navbar from "./components/Navbar";
+import Routes from "./components/Routes";
 
 function App() {
-	const navLinks = [
-		{ text: "Github", link: "https://github.com/Koloru" },
-		{ text: "LinkedIn", link: "https://www.linkedin.com/in/infanteneil/" },
-		{ text: "Email", link: "mailto:Koloru@Koloru.dev" },
-	];
-
-	const pictureArray = [bg, bg2, bg3];
-	const randomIndex = Math.floor(Math.random() * pictureArray.length);
-
+	const construction = false;
 	return (
-		<div className='h-screen w-screen flex flex-col gap-4 items-center justify-center font-raleway text-white'>
-			<div
-				className='absolute h-screen w-screen -z-50 bg-cover bg-no-repeat bg-center'
-				style={{ backgroundImage: `url(${pictureArray[randomIndex]})` }}
-			></div>
-			<div className='absolute h-screen w-screen -z-20 bg-[#9fd8cb] opacity-40'></div>
-			<h1 className='font-bold text-4xl lg:text-6xl xl:text-9xl drop-shadow-lg shadow-emerald-300'>
-				Come back later
-			</h1>
-			<p className=''>This site is currently under construction</p>
-			<p className='text-4xl tracking-widest opacity-50 font-bold absolute bottom-[100px]'>
-				KOLORU
-			</p>
-			<div className='flex justify-between gap-2 absolute bottom-5'>
-				{navLinks.map((link) => (
-					<Button text={link.text} link={link.link} key={link.text} />
-				))}
-			</div>
+		<div className={cx("h-screen font-lato text-main relative")}>
+			{construction ? (
+				<Construction />
+			) : (
+				<div className='flex'>
+					<div className='h-screen w-[15px] z-50 bg-main absolute text-main'></div>
+					<div className='h-screen w-[15px] z-50 bg-main absolute right-0 text-main'></div>
+					<div className='w-screen h-[15px] bg-gray absolute text-main'></div>
+					<div className='w-screen h-[15px] bg-gray absolute bottom-0 text-main'></div>
+					<Navbar />
+					<div className='flex-1 flex items-center p-4'>
+						<Routes />
+					</div>
+				</div>
+			)}
 		</div>
 	);
 }
