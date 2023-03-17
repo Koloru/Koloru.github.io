@@ -21,7 +21,7 @@ const Home = () => {
 				seeks novel solutions to novel problems. <br />
 				knowledge hungry and loves learning new things, I can help you build
 				your ideas to life.
-				<span className='block mt-6'>I also like dogs and photography</span>
+				<span className='block mt-6'>I also like dogs and taking pictures of random places</span>
 			</p>
 			<button className='border border-2 w-fit p-1 px-6 font-bold ml-1 text-center hover:border-main hover:text-white hover:bg-main hover:opacity-70'>
 				My Resume
