@@ -1,8 +1,9 @@
-interface type {
+interface props {
 	link: string;
 	text: string;
 }
-const Button = ({ link, text }: type) => {
+
+const Button = ({ link, text }: props) => {
 	return (
 		<a
 			href={link}

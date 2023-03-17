@@ -5,7 +5,9 @@ import profilePic from "../assets/atsuko.jpg";
 
 const Navbar = () => {
 	return (
-		<div className='h-screen flex flex-col items-center justify-between gap-10 text-main py-12'>
+		<div className='relative h-screen flex flex-col items-center justify-between gap-10 text-main py-12'>
+			<div className='absolute right-0 top-[40%] w-[3px] h-40 bg-main rounded-full'></div>
+
 			{/* Profile */}
 			<div className='flex flex-col items-center gap-2'>
 				<div className='w-96 px-14 flex items-end'>
@@ -39,12 +41,17 @@ const Navbar = () => {
 					</Link>
 					<Link href='projects' className='group'>
 						<span className=' cursor-pointer group-hover hover:animate-pulse hover:text-purple-600 font-light hover:font-bold hover:text-lg'>
-							Stuff I built
+							Stuff I learned
 						</span>
 					</Link>
 					<Link href='contact' className='group font-light'>
 						<span className=' cursor-pointer group-hover hover:animate-pulse hover:text-purple-600 font-light hover:font-bold hover:text-lg'>
 							Reach out
+						</span>
+					</Link>
+					<Link href='gallery' className='group font-light'>
+						<span className=' cursor-pointer group-hover hover:animate-pulse hover:text-purple-600 font-light hover:font-bold hover:text-lg'>
+							Random pictures I take
 						</span>
 					</Link>
 				</ul>

@@ -1,8 +1,7 @@
 const Home = () => {
 	return (
 		//test
-		<div className='relative flex flex-col gap-y-5 justify-center w-full h-full p-16 pl-24'>
-			<div className='absolute left-[-25px] w-[3px] h-40 bg-main rounded-full'></div>
+		<div className='flex flex-col gap-y-5 justify-center w-full h-full p-16 pl-24'>
 			<a
 				className='absolute right-5 top-3 font-light text-main text-xs tracking-widest'
 				href='mailto:koloru@koloru.dev'
@@ -21,7 +20,9 @@ const Home = () => {
 				seeks novel solutions to novel problems. <br />
 				knowledge hungry and loves learning new things, I can help you build
 				your ideas to life.
-				<span className='block mt-6'>I also like dogs and taking pictures of random places</span>
+				<span className='block mt-6'>
+					I also like dogs and taking pictures of random places
+				</span>
 			</p>
 			<button className='border border-2 w-fit p-1 px-6 font-bold ml-1 text-center hover:border-main hover:text-white hover:bg-main hover:opacity-70'>
 				My Resume

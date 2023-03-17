@@ -1,9 +1,9 @@
-import Button from "../components/Button";
+import Button from "../Button";
 
 // bg from home
-import bg from "../assets/home/bg.jpg";
-import bg2 from "../assets/home/bg2.jpg";
-import bg3 from "../assets/home/bg3.jpg";
+import bg from "../../assets/home/bg.jpg";
+import bg2 from "../../assets/home/bg2.jpg";
+import bg3 from "../../assets/home/bg3.jpg";
 
 const Construction = () => {
 	const navLinks = [
