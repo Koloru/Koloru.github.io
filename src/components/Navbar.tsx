@@ -36,12 +36,12 @@ const Navbar = () => {
 					</Link>
 					<Link href='about' className='group'>
 						<span className=' cursor-pointer group-hover hover:animate-pulse hover:text-purple-600 font-light hover:font-bold hover:text-lg'>
-							What can I do
+							Stuff I made
 						</span>
 					</Link>
 					<Link href='projects' className='group'>
 						<span className=' cursor-pointer group-hover hover:animate-pulse hover:text-purple-600 font-light hover:font-bold hover:text-lg'>
-							Stuff I learned
+							Stuff I'm learning
 						</span>
 					</Link>
 					<Link href='contact' className='group font-light'>

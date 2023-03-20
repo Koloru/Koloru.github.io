@@ -2,14 +2,6 @@ const Home = () => {
 	return (
 		//test
 		<div className='flex flex-col gap-y-5 justify-center w-full h-full p-16 pl-24'>
-			<a
-				className='absolute right-5 top-3 font-light text-main text-xs tracking-widest'
-				href='mailto:koloru@koloru.dev'
-			>
-				Email me
-				<br />
-				koloru@koloru.dev
-			</a>
 			<h1 className='text-7xl font-bold tracking-wider'>Koloru / Neil</h1>
 			<p className='text-gray2 pl-1'>
 				Frontend Developer -{" "}

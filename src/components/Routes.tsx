@@ -9,8 +9,8 @@ const Routes = () => {
 				<Home />
 			</Route>
 			<Route path='/resume'>Resume</Route>
-			<Route path='/about'>What can I do</Route>
-			<Route path='/projects'>Stuff I learned</Route>
+			<Route path='/about'>Stuff I made</Route>
+			<Route path='/projects'>What can I do</Route>
 			<Route path='/contact'>Reach out</Route>
 			<Route path='/gallery'>Random pictures I take</Route>
 			<Route>
