@@ -29,11 +29,15 @@ const Navbar = () => {
 							Home
 						</span>
 					</Link>
-					<Link href='resume' className='group'>
+					<a
+						href='https://resume.koloru.dev/'
+						className='group'
+						target='_blank'
+					>
 						<span className=' cursor-pointer group-hover hover:shadow-pulse hover:animate-pulse hover:text-purple-600 font-light hover:font-bold hover:text-lg'>
 							My Resume
 						</span>
-					</Link>
+					</a>
 					<Link href='about' className='group'>
 						<span className=' cursor-pointer group-hover hover:animate-pulse hover:text-purple-600 font-light hover:font-bold hover:text-lg'>
 							Stuff I made
