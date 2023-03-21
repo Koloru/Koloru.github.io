@@ -5,7 +5,7 @@ import profilePic from "../assets/atsuko.jpg";
 
 const Navbar = () => {
 	return (
-		<div className='my-auto fixed relative flex flex-col items-center gap-8 text-main py-6'>
+		<div className='my-auto fixed relative flex flex-col items-center gap-12 text-main'>
 			<div className='absolute right-0 top-[40%] w-[3px] h-40 bg-main rounded-full'></div>
 
 			{/* Profile */}

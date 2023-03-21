@@ -1,6 +1,5 @@
 const Home = () => {
 	return (
-		//test
 		<div className='flex flex-col gap-y-5 justify-center w-full h-full py-16 pl-24'>
 			<h1 className='text-7xl font-bold tracking-wider'>Koloru / Neil</h1>
 			<p className='text-gray2 pl-1'>
@@ -15,9 +14,13 @@ const Home = () => {
 					I also like dogs and taking pictures of random places
 				</span>
 			</p>
-			<button className='border border-2 w-fit p-1 px-6 font-bold ml-1 text-center hover:border-main hover:text-white hover:bg-main hover:opacity-70'>
+			<a
+				href='https://resume.koloru.dev/'
+				target='_blank'
+				className='border border-2 w-fit p-1 px-6 font-bold ml-1 text-center hover:border-main hover:text-white hover:bg-main hover:opacity-70'
+			>
 				My Resume
-			</button>
+			</a>
 		</div>
 	);
 };
