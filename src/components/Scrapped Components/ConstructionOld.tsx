@@ -1,4 +1,4 @@
-import Button from "../Button";
+import Button from "./Button";
 
 // bg from home
 import bg from "../../assets/home/bg.jpg";
