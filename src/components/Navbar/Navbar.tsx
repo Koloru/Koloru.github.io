@@ -25,9 +25,7 @@ const Navbar = () => {
         <ul className="flex flex-col gap-4 text-center w-3/5 mt-8 ">
           <NavLink text="Home" url="/" />
           <NavLink text="My Resume" url="https://resume.koloru.dev/" />
-          <NavLink text="Stuff I made" url="about" />
           <NavLink text="Stuff I'm Learning" url="projects" />
-          <NavLink text="React out" url="contact" />
           <NavLink text="Random pictures I take" url="gallery" />
         </ul>
       </div>
