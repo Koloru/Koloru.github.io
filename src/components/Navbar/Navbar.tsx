@@ -13,7 +13,7 @@ const Navbar = () => {
           <img
             src={profilePic}
             alt="Profile Picture"
-            className="w-full rounded-md"
+            className="w-full rounded-md hover:-rotate-12 duration-200 ease-in"
           />
         </div>
         <h1 className="text-4xl tracking-widest font-bold uppercase">Koloru</h1>
