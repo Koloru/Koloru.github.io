@@ -10,7 +10,9 @@ const Routes = () => {
         <Home />
       </Route>
       <Route path="/resume">Resume</Route>
-      <Route path="/projects"><Projects /></Route>
+      <Route path="/projects">
+        <Projects />
+      </Route>
       <Route path="/gallery">Random pictures I take</Route>
       <Route>
         <NotFound />
