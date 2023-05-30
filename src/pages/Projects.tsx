@@ -1,17 +1,15 @@
 import ProjectCard from "../components/Projects/ProjectCard";
+import projects from "../data/projects.json";
 
 ProjectCard;
 const Projects = () => {
   return (
-    <div className="flex flex-col gap-y-5 justify-center w-full h-full py-16 pl-24">
-      <h1 className="text-5xl mb-4">Stuff that I made</h1>
-      <div className="flex flex-wrap items-center gap-6 max-w-[80%]">
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
+    <div className="flex flex-col justify-center w-full h-full py-16 pl-24 gap-y-5">
+      <h1 className="mb-4 text-5xl">Stuff that I made</h1>
+      <div className="flex flex-wrap items-center gap-2 max-w-[80%] ">
+        {projects.map((project) => (
+          <ProjectCard key={project.id} {...project} />
+        ))}
       </div>
     </div>
   );
