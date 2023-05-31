@@ -1,4 +1,4 @@
-import profilePic from "../../assets/atsuko.jpg";
+import profilePic from "../../assets/kita.png";
 import NavLink from "./NavLink";
 import NavSocials from "./NavSocials";
 

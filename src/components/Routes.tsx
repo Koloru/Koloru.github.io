@@ -1,6 +1,7 @@
 import { Route, Switch } from "wouter";
 import Home from "../pages/Home";
 
+import Gallery from "../pages/Gallery";
 import Projects from "../pages/Projects";
 import NotFound from "./NotFound";
 const Routes = () => {
@@ -13,7 +14,12 @@ const Routes = () => {
       <Route path="/projects">
         <Projects />
       </Route>
-      <Route path="/gallery">Random pictures I take</Route>
+      <Route path="/gallery">
+        <Gallery />
+      </Route>
+      <Route path="/gallery/:id">
+        <Gallery />
+      </Route>
       <Route>
         <NotFound />
       </Route>

@@ -13,7 +13,7 @@ const NavLink = ({
   if (url.includes("http")) {
     return (
       <a href={url} className={`group ${className}`} target="_blank">
-        <span className="font-light cursor-pointer group-hover hover:shadow-pulse hover:animate-pulse hover:text-purple-600 hover:font-bold hover:scale-125">
+        <span className="group-hover cursor-pointer font-light hover:scale-125 hover:animate-pulse hover:font-bold hover:text-purple-600 hover:shadow-pulse">
           {text}
         </span>
       </a>
@@ -21,7 +21,7 @@ const NavLink = ({
   } else {
     return (
       <Link href={url} className="group ">
-        <span className="font-light cursor-pointer group-hover hover:shadow-pulse hover:animate-pulse hover:text-purple-600 hover:font-bold hover:scale-125">
+        <span className="group-hover cursor-pointer font-light hover:scale-125 hover:animate-pulse hover:font-bold hover:text-purple-600 hover:shadow-pulse">
           {text}
         </span>
       </Link>
