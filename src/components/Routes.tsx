@@ -1,25 +1,30 @@
 import { Route, Switch } from "wouter";
-import Home from "../pages/Home";
+import { useResponsive } from "../utils/useResponsive";
 
-import Gallery from "../pages/Gallery";
+import Home from "../pages/Home";
 import Projects from "../pages/Projects";
 import NotFound from "./NotFound";
+
 const Routes = () => {
+  const { isMobile } = useResponsive();
   return (
     <Switch>
       <Route path="/">
         <Home />
       </Route>
-      <Route path="/resume">Resume</Route>
-      <Route path="/projects">
-        <Projects />
-      </Route>
-      <Route path="/gallery">
+      {!isMobile && (
+        <>
+          <Route path="/projects">
+            <Projects />
+          </Route>
+        </>
+      )}
+      {/* <Route path="/gallery">
         <Gallery />
-      </Route>
-      <Route path="/gallery/:id">
+      </Route> */}
+      {/* <Route path="/gallery/:id">
         <Gallery />
-      </Route>
+      </Route> */}
       <Route>
         <NotFound />
       </Route>
